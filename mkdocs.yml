@@ -1,0 +1,101 @@
+# Project information
+site_name: Robusta
+# defeine TOC or order of website-
+nav:
+  - About Robusta: 
+    - Overview: Overview.md
+    - Installation: Installation.md
+  - Tutorials:
+    - Triggers: 
+      - Triggers/Manual.md
+      - Smart Trigger: Triggers/SmartTriggers.md
+    - Actions:
+      - Actions/Grafana.md
+    - Sink:
+      - Data Dog: Sink/DataDog.md
+      - Slack: Sink/Slack.md
+    
+  # - Reference:
+  # - Contributors Guide:
+
+
+site_author: Robusta
+site_description: >-
+  DESCRIPTION
+
+# Repository
+repo_name: robusta-dev/robusta
+repo_url: https://github.com/robusta-dev/robusta
+
+# Configuration
+theme:
+  name: material
+  features:
+    # - navigation.tabs
+    # - navigation.sections
+    # - toc.integrate
+    - navigation.top
+    # - navigation.sections
+    - navigation.tabs
+    # - navigation.expand
+    - navigation.indexes
+    - navigation.tracking
+    - navigation.tabs.sticky
+    - toc.follow
+  language: en
+  palette:
+    - scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    - scheme: slate
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+  # logo: logo
+  # favicon: images/favicon.png
+
+# extra_css:
+#   - stylesheets/extra.css
+
+extra:
+  social:
+    - icon: fontawesome/brands/github-alt
+      link: https://github.com/robusta-dev/robusta
+    - icon: fontawesome/brands/twitter
+      link: https://twitter.com/RobustaDev
+    - icon: fontawesome/brands/linkedin
+      link: https://www.linkedin.com/company/robusta-dev/in
+
+extra_javascript:
+  # - javascripts/mathjax.js
+  - https://polyfill.io/v3/polyfill.min.js #?features=es6
+  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
+
+markdown_extensions:
+  - attr_list
+  - md_in_html
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - admonition
+  - pymdownx.arithmatex:
+      generic: true
+  - footnotes
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true 
+  - pymdownx.mark
+  
+  
+plugins:
+  - search
+
+copyright: |
+  &copy; 2022 <a href="https://github.com/robusta-dev/robusta"  target="_blank" rel="noopener">Robusta</a>
